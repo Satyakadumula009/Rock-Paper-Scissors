@@ -1,0 +1,82 @@
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(134, 99, 99);
+}
+h1,p{
+    cursor: default;
+}
+.rps-container{
+    margin-top: 20px;
+}
+.protogonists{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 15px;
+}
+.rock-img{
+    background-image: url('Rock.png');
+    background-size: cover;
+    cursor: pointer;
+}
+.paper-img{
+    background-image: url('Paper.png');
+    background-size: cover;
+    cursor: pointer;
+}
+.scissor-img{
+    background-image: url('Scissors.png');
+    background-size: cover;
+    cursor: pointer;
+}
+.compUserImg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.comp-user{
+    outline: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: white;
+}
+.protogonists:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.js-win,.js-score,.comp-user{
+    font-size: 22px;
+    font-weight: bold;
+}
+.btn-reset{
+    padding: 14px 40px;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    transform: scale(1.05);
+    transition: .2s;
+    position: fixed;
+    bottom: 50px;
+    left: 710px;
+    cursor: pointer;
+}
+.btn-reset:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    background-color:black;
+    border: none;
+    color: white;
+}

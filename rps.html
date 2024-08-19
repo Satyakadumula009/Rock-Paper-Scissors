@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Gamer</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+    <p class="initialpara" style="padding-right: 80px;padding-top: 20px; color: white;">shall we play <span style="font-size: 38px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: bold ; color: black;">Rock Paper Scissors</span> ?</p>
+<!-- ========= -->
+    <div class="rps-container">
+        <button class="protogonists rock-img" onclick="
+            computerMove();
+            rpsWinner('Rock');
+        "></button>
+    <!-- ========= -->
+        <button class="protogonists paper-img" onclick="
+            computerMove();
+            rpsWinner('Paper');
+        "></button>
+    <!-- ========= -->
+        <button class="protogonists scissor-img" onclick="
+            computerMove();
+            rpsWinner('Scissors');
+        "></button>
+    </div>
+<!-- ========= -->
+    <p class="js-win"></p>
+<!-- ========= -->
+    <p class="comp-user"></p>
+<!-- ========= -->
+    <p class="js-score"></p>
+<!-- ========= -->
+    <button class="btn-reset" onclick="
+        reset();
+        localStorage.removeItem('score');
+    ">Reset</button>
+<!-- ========= -->
+<script src="rps.js"></script>
+
+</body>
+</html>
